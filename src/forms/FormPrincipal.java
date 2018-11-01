@@ -7,6 +7,7 @@ package forms;
 
 import dao.ClienteDAO;
 import dao.LivroDAO;
+import dao.VendaDAO;
 
 /**
  *
@@ -16,6 +17,7 @@ public class FormPrincipal extends javax.swing.JFrame {
 
     public static ClienteDAO daoCliente = null;
     public static LivroDAO daoLivro = null;
+    public static dao.VendaDAO daoVenda = null;
             
     public FormPrincipal() {
         initComponents();
@@ -23,6 +25,7 @@ public class FormPrincipal extends javax.swing.JFrame {
         
         daoCliente = new ClienteDAO();
         daoLivro = new LivroDAO();
+        daoVenda = new VendaDAO();
     }
 
     /**
